@@ -8,5 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector('.slides').style.transform = `translateX(-${currentIndex * 100}%)`;
     };
 
-    setInterval(moveToNextSlide, 3000); // Change slide every 3 seconds
+    setInterval(moveToNextSlide, 5000); // Change slide every 3 seconds
 });
