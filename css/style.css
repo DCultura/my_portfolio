@@ -107,6 +107,7 @@ footer>.divider {
 }
 
 .content>section>.row>.col>.container {
+    min-height: 420px;
     background-color: #222222;
     padding: 30px;
 }
@@ -151,32 +152,65 @@ footer>.divider {
     border-radius: 10px;
 }
 
-.content>section>.row>.col>.carousel {
+.carousel {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-.content>section>.row>.col>.carousel>.slides {
+.slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.content>section>.row>.col>.carousel>.slides>.slide {
+.slide {
     min-width: 100%;
-    height: 400px;
+    height: 550px;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
-.content>section>.row>.col>.carousel>.slides>.slide>.caption {
+.caption {
     position: absolute;
     bottom: 20px;
     left: 20px;
     background: rgba(0, 0, 0, 0.5);
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px;
     border-radius: 5px;
+}
+
+.caption h3 {
+    margin: 0 0 5px;
     font-size: 1.4rem;
+}
+
+.caption p {
+    color: #fff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.carousel button.prev,
+.carousel button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.carousel button.prev {
+    left: 10px;
+}
+
+.carousel button.next {
+    right: 10px;
 }
